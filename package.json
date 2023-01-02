@@ -1,0 +1,19 @@
+{
+  "name": "template4sass",
+  "version": "1.0.0",
+  "author": "Divine Nkwati",
+  "description": "SASS - Project template.",
+  "type": "module",
+  "keywords": [
+    "sass",
+    "scss",
+    "css"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "dev": "sass src:out/css -w"
+  },
+  "devDependencies": {
+    "sass": "^1.57.1"
+  }
+}

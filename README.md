@@ -1,2 +1,5 @@
-# template4sass
-SASS - Project template.
+# SASS - Project template.
+
+# License
+
+MIT license, see LICENSE.
