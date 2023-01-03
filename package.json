@@ -11,7 +11,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "dev": "sass src:out/css -w"
+    "dev": "./node_modules/.bin/sass src:out/css -w"
   },
   "devDependencies": {
     "sass": "^1.57.1"
