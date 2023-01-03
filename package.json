@@ -1,7 +1,6 @@
 {
   "name": "template4sass",
   "version": "1.0.0",
-  "author": "Divine Nkwati",
   "description": "SASS - Project template.",
   "type": "module",
   "keywords": [
@@ -10,6 +9,11 @@
     "css"
   ],
   "license": "MIT",
+  "author": "Nkwati Divine <drnkwati+github@gmail.com> (https://github.com/drnkwati)",
+  "homepage": "https://github.com/dnkwati/template4sass#readme",
+  "bugs": {
+    "url": "https://github.com/dnkwati/template4sass/issues"
+  },
   "scripts": {
     "dev": "./node_modules/.bin/sass src:out/css -w"
   },
