@@ -1,0 +1,13 @@
+@use '../01-settings/__index' as *;
+
+.text {
+    font-size: $font-size-base;
+}
+
+.text-xs {
+    font-size: $font-size-base * 0.71;
+}
+
+.text-sm {
+    font-size: $font-size-base * 0.86;
+}

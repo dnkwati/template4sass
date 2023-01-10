@@ -1,7 +1,21 @@
-@use '01-settings' as *;
-@forward '06-components';
+// Settings – used with preprocessors and contain font, colors definitions, etc.
+@forward '01-settings/__index';
 
-.container {
-	color: $primary;
-	font-family: $font;
-}
+// Tools – globally used mixins and functions. It’s important not to output any CSS in the first 2 layers.
+@forward '02-tools/__index';
+
+// Generic – reset and/or normalize styles, box-sizing definition, etc.  This is the first layer which generates actual CSS.
+@forward '03-vendor/__index';
+@forward '03-generic/__index';
+
+// Elements – styling for bare HTML elements (like H1, A, etc.). These come with default styling from the browser so we can redefine them here.
+@forward '04-elements/__index';
+
+// Objects – class-based selectors which define undecorated design patterns, for example the media object known from OOCSS
+@forward '05-objects/__index';
+
+// Components – specific UI components. This is where most of our work takes place. We often compose UI components of Objects and Components
+@forward '06-components/__index';
+
+// Utilities – utilities and helper classes with ability to override anything which goes before in the triangle, e.g. hide helper class
+@forward '07-utilities/__index';

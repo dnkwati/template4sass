@@ -1,0 +1,8 @@
+// links & buttons
+a {
+    &.active,
+    &:focus,
+    &:hover {
+        transition: 0.35s;
+    }
+}
