@@ -19,7 +19,8 @@
     "url": "https://github.com/dnkwati/template4sass.git"
   },
   "scripts": {
-    "dev": "./node_modules/.bin/sass src:out/css -w"
+    "dev": "(./node_modules/.bin/sass src:dev/css -w) & (if [ \"$(which serve)\" ]; then serve ./; fi)",
+    "dist": "./node_modules/.bin/sass src:dist/css --style compressed --no-source-map"
   },
   "devDependencies": {
     "sass": "latest"
